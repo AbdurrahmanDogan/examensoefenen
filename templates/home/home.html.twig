@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block body %}
+<div class="container-md">
+    <div class="row">
+        <div class="col-md-12 fw-bold text-center p-3">
+            {% if app.user %}
+                Welkom op mijn website {{ app.user.firstname }}
+                Patient afspraken
+            {% else %}
+                Welkom op mijn website, login of registreer jezelf voor coole functies
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
